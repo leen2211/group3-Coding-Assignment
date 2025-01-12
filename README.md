@@ -300,6 +300,13 @@ Eva and Leena - The database is created and populated in MS Access and all SQL q
 Alaa - Documentation
 Shelly, Eva, Leena - Testing
 
+# Project Documentation
+ERD Diagram – Visual representation of the database structure.  
+SQL Queries – Stored in Access and MySQL formats.  
+Meeting Notes – Documented team discussions and decisions.  
+Action Plan – Detailed timeline and task breakdown.  
+README.md – Project overview and usage instructions.
+
 # GitHub Repository
 Project LInk？
 
