@@ -44,17 +44,17 @@ Record the patient's appointment information.
 Test_id, test_type, doctor_id, patient_id, result_detail, result_time)
 Record patient laboratory test results
 
-# SQL Query Functions
-1. MS Access
-All 19 SQL queries are saved directly within the Access database (hospital_database.accdb) under the Queries section.
-These queries can be easily executed by opening the Access file and navigating to the saved queries.
-2. MySQL
-The database schema and data are exported separately as a .sql file (hospital_database.sql).
-The SQL queries are stored in a dedicated file (SQL_Queries.sql) for easy execution.
-This separation allows better data management and flexibility in running queries.
+# Guide to using SQL queries
+1. For MS Access：
+   Open the hospital_database.accdb file directly.
+   Navigate to the Queries section.
+   Double-click on any saved query to run it.
 
-Note: Because members of the group use MACs, we use MySQL Workbench for Mac to run SQL queries. This tool is the official recommendation of MySQL, user-friendly, full-featured, suitable for cross-platform operation.
-
+2. For MySQL：
+   Use My SQL Workbench's import csv command to import hospital_database
+   Open the SOL_queries.sql file in the appropriate database management tool, select the query you want to execute and run it.
+   
+   Note: Since the database is created using MySQL Workbench, you can simply run the SQL query in the Workbench environment.
 
 # Examples of SQL Queries
 Here are a few examples of the implemented SQL queries to demonstrate the database functionality:
@@ -90,17 +90,6 @@ FROM prescription
 INNER JOIN doctor ON prescription.doctor_id = doctor.doctor_id
 WHERE doctor.doctor_id = 7
 GROUP BY doctor.doctor_name;  
-
-# Guide for Use
-1. For MS Access：
-   open the hospital_database.accdb file directly.
-   Navigate to the Queries section.
-   Double-click on any saved query to run it.
-
-2. For MySQL：
-   import the hospital_database.sql file using the mysqldump command.
-   Open the SOL_queries.sql file in the appropriate database management tool, select the query you want to execute and run it.
-
 
 # Project Contributors
 Shelly - The entity relationship diagram is created, and the structure and fields of the database are planned.
