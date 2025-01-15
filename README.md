@@ -71,30 +71,30 @@ The project implements the following 19 SQL queries to meet different data retri
    INNER JOIN
    hospital ON doctor.hospital_id = hospital.hospital_id
    WHERE
-   hospital.hospital_id = 15;
+   hospital.hospital_id = 15;  
 
 2. Print a list of all prescriptions for a particular patient, ordered by the prescription date.
    Purpose: displays all prescriptions for a particular patient in chronological order.
-   SELECT
-   prescription_id,
-   medication_name,
-   create_time
-   FROM
-   prescription
-   INNER JOIN
+   SELECT  
+   prescription_id,  
+   medication_name,  
+   create_time  
+   FROM  
+   prescription  
+   INNER JOIN  
    medication ON prescription.medication_id = medication.medication_id
-   WHERE
-   patient_id = 56
-   ORDER BY 
-   prescription.create_time ASC;
+   WHERE  
+   patient_id = 56  
+   ORDER BY   
+   prescription.create_time ASC;  
 
-3. Print a list of all prescriptions that a particular doctor has prescribed.
-   Purpose: displays the total number of prescriptions written by a particular doctor.
-   SELECT doctor.doctor_name, COUNT(prescription.prescription_id) AS Total_Prescriptions
-   FROM prescription
-   INNER JOIN doctor ON prescription.doctor_id = doctor.doctor_id
-   WHERE doctor.doctor_id = 7
-   GROUP BY doctor.doctor_name;
+3. Print a list of all prescriptions that a particular doctor has prescribed.  
+   Purpose: displays the total number of prescriptions written by a particular doctor.  
+   SELECT doctor.doctor_name, COUNT(prescription.prescription_id) AS Total_Prescriptions  
+   FROM prescription  
+   INNER JOIN doctor ON prescription.doctor_id = doctor.doctor_id    
+   WHERE doctor.doctor_id = 7  
+   GROUP BY doctor.doctor_name;  
 
 4. Print a table showing all prescriptions ordered by the patient name alphabetically
    Purpose: sort all prescriptions
