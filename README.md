@@ -62,7 +62,7 @@ Record patient laboratory test results
 The project implements the following 19 SQL queries to meet different data retrieval requirements.
 
 1. Print a list of all doctors based at a particular hospital  
-   Purpose: retrieve the names of all doctors working in the designated hospital.  
+   Purpose: retrieve the names of all doctors working in the designated hospital.    
    SELECT  
    hospital.hospital_name,   
    doctor.doctor_name  
@@ -323,7 +323,7 @@ Action Plan – Detailed timeline and task breakdown.
 README.md – Project overview and usage instructions.  
 
 # GitHub Repository
-Project LInk？
+https://leen2211.github.io/group3-Coding-Assignment/  
 
 
 
