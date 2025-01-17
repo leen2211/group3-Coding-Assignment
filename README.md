@@ -52,9 +52,10 @@ Record patient laboratory test results
    Navigate to the Queries section.  
    Double-click on any saved query to run it.  
 
-2. For MySQL：  
-   Use My SQL Workbench's import csv command to import hospital_database.  
-   Open the SOL_queries.sql file in the appropriate database management tool, select the query you want to execute and run it.  
+2. For MySQL：
+   There are two MySQL files, both conducted on MySQL workbench software. 
+   The file Groups3_hospital_db.sql is the database. The data was imported using the built-in CSV import feature in Workbench. 
+   The file Group3_query.sql contains the queries. OPen it in the appropriate database management tool and select the query you want to execute. 
    
    Note: Since the database is created using MySQL Workbench, you can simply run the SQL query in the Workbench environment.
 
