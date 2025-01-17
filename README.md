@@ -23,7 +23,7 @@ Record the patient's personal information, such as name, birthday, address, and 
 List medications and their names.  
 
 5. prescription  
-(prescription, doctor_id, patient_id, medication_id, create_time,)  
+(prescription, doctor_id, patient_id, medication_id, create_time)  
 Record prescription information and associate patients, medications, and doctors.  
 
 6. disease  
@@ -31,7 +31,7 @@ Record prescription information and associate patients, medications, and doctors
 Store disease information.  
 
 7. disease_to_specialist  
-(ID, diease_id, doctor_id,)  
+(ID, diease_id, doctor_id)  
 Map the disease to the specialist  
 
 8. disease_to_medication  
@@ -39,11 +39,11 @@ Map the disease to the specialist
 Associate the disease with the medication used to treat it  
 
 9. appointment  
-(appointment_id, patient_id, doctor_id scheduled_time, create_time,)  
+(appointment_id, patient_id, doctor_id scheduled_time, create_time)  
 Record the patient's appointment information.  
  
 10. labtest_result  
-Test_id, test_type, doctor_id, patient_id, result_detail, result_time)  
+(Test_id, test_type, doctor_id, patient_id, result_detail, result_time)  
 Record patient laboratory test results  
   
 # Guide to using SQL queries  
