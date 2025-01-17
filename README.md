@@ -7,7 +7,7 @@ The database supports complex SQL queries to facilitate information retrieval an
 The data used in this project was randomly generated using ChatGPT and Excel formulas to simulate real healthcare data for testing and analysis.
 
 1. hospital  
-(hospital_id, hospital_name, hospital_address, size, hospital_type, emergency_service)  
+(hospital_id, hospital_name, hospital_address, size, hospital_type, emergency_service，accreditation_year)  
 Stores basic hospital information such as name, address, size, etc.  
 
 2. doctor  
